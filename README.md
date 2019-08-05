@@ -2,10 +2,10 @@
 42 Project Aimed at re-creating own version of the UNIX system command ls
 
 ### Stats
-## 42 FINAL GRADE : TBD
-## PFT: 2218/2437 Passed
-## 42Filechecker Basic: 182/182 Passed
-## 42Filechecker Moulitest: 265/267 (Although I'm almost certain the 2 failed cases are machine error. It may work on your system).
+### 42 FINAL GRADE : TBD
+### PFT: 2218/2437 Passed
+### 42Filechecker Basic: 182/182 Passed
+### 42Filechecker Moulitest: 265/267 (Although I'm almost certain the 2 failed cases are machine error. It may work on your system).
 
 ### Supported Conversions:
 * c, s, p, P
