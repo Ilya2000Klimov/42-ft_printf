@@ -6,7 +6,7 @@
 #    By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/28 23:38:04 by hbhuiyan          #+#    #+#              #
-#    Updated: 2019/08/05 15:41:33 by hbhuiyan         ###   ########.fr        #
+#    Updated: 2019/08/05 17:17:23 by hbhuiyan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SRC = 	./ft_memset.c ./ft_bzero.c ./ft_memcpy.c ./ft_memccpy.c ./ft_memmove.c \
 		./ft_putnstr.c ./ft_putnstr_fd.c ./ft_putendl_fd.c ./ft_putnbr_fd.c \
 		./ft_isspace.c ./ft_iswspace.c ./ft_wrdcnt.c ./ft_intlen.c ./ft_lstlen.c \
 		./ft_lstnew.c ./ft_lstdelone.c ./ft_lstdel.c ./ft_lstadd.c ./ft_lstiter.c \
-		./ft_lstmap.c ./ft_sqrt.c ./ft_uintlen.c ./ft_uitoa.c ./ft_ftoa.c ./ft_strchr_index.c
+		./ft_lstmap.c ./ft_sqrt.c ./ft_uintlen.c ./ft_uintlen_base.c  ./ft_uitoa.c\
+		./ft_ftoa.c ./ft_strchr_index.c
 
 INCLUDES = libft.h
 

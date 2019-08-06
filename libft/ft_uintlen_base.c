@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_uitoa.c                                         :+:      :+:    :+:   */
+/*   ft_uintlen_base.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/21 15:17:08 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 17:18:48 by hbhuiyan         ###   ########.fr       */
+/*   Created: 2019/05/26 17:45:36 by hbhuiyan          #+#    #+#             */
+/*   Updated: 2019/08/05 17:22:17 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_uitoa(uintmax_t n)
+size_t		ft_uintlen_base(uintmax_t n, int base)
 {
-	char	*s;
-	size_t	l;
+	int		c;
 
-	l = ft_uintlen(n);
-	if (!(s = ft_strnew(l)))
-		return (NULL);
-	if (n == ULLONG_MAX)
-		return (ft_strdup("18446744073709551615"));
-	if (n == 0)
-		*s = '0';
+	c = 0;
+	if (n == 18446744073709551615U)
+		return (20);
 	while (n > 0)
 	{
-		s[--l] = (n % 10) + '0';
-		n /= 10;
+		n /= base;
+		c++;
 	}
-	return (s);
+	return (c);
 }

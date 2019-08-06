@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/26 16:26:26 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 08:27:18 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 17:16:26 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char		*ft_itoa_base(uintmax_t n, int base, int upper)
 		return (NULL);
 	else if (base == 10)
 		return (ft_uitoa(n));
-	l = ft_uintlen(n, base);
+	l = ft_uintlen_base(n, base);
 	if (!(s = ft_strnew(l)))
 		return (NULL);
 	tab = ft_strjoin("0123456789abcdef", "\0");

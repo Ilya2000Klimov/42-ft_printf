@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 15:29:18 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 08:27:08 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 17:20:10 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int					ft_atoi(const char *str);
 char				*ft_itoa(intmax_t n);
 char				*ft_itoa_base(uintmax_t n, int base, int upper);
 size_t				ft_intlen(intmax_t n);
-size_t				ft_uintlen(uintmax_t n, int base);
+size_t				ft_uintlen(uintmax_t n);
 void				ft_putstr(char const *s);
 void				ft_putnstr(char *s, size_t n);
 void				ft_putnstr_fd(char *s, size_t n, int fd);
@@ -100,5 +100,6 @@ char				*ft_uitoa(uintmax_t n);
 char				*ft_ftoa(long double n, size_t prcsn);
 char				*add_dot(char *n, size_t prcsn);
 int					ft_strchr_index(char *s, int c);
+size_t				ft_uintlen_base(uintmax_t n, int base);
 
 #endif
