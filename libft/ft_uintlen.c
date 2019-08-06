@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 17:08:12 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 17:22:25 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:21:23 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t		ft_uintlen(uintmax_t n)
 	size_t	c;
 
 	c = 0;
-	if (n == 18446744073709551615U)
-		return (20);
 	while (n > 0)
 	{
 		n /= 10;
