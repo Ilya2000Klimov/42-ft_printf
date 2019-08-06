@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 00:12:42 by havi              #+#    #+#             */
-/*   Updated: 2019/07/08 23:59:34 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:39:24 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,25 @@
 
 int		is_id(char c)
 {
-	return (c == 'd' || c == 'D' || c == 'i' || c == 'o' || c == 'O' ||
-			c == 'u' || c == 'U' || c == 'x' || c == 'X' || c == 'f' ||
-			c == 'F' || c == 'e' || c == 'E' || c == 'g' || c == 'G' ||
-			c == 'c' || c == 's' || c == 'p' || c == 'P' || c == 'n' ||
+	return (c == 'd' || c == 'D' || c == 'i' || c == 'o' || c == 'O' || \
+			c == 'u' || c == 'U' || c == 'x' || c == 'X' || c == 'f' || \
+			c == 'F' || c == 'e' || c == 'E' || c == 'g' || c == 'G' || \
+			c == 'c' || c == 's' || c == 'p' || c == 'P' || c == 'n' || \
 			c == '%');
 }
 
 int		notstring_id(char c)
 {
-	return (c == 'd' || c == 'D' || c == 'i' || c == 'o' || c == 'O' ||
-			c == 'u' || c == 'U' || c == 'x' || c == 'X' || c == 'f' ||
-			c == 'F' || c == 'e' || c == 'E' || c == 'g' || c == 'G' ||
+	return (c == 'd' || c == 'D' || c == 'i' || c == 'o' || c == 'O' || \
+			c == 'u' || c == 'U' || c == 'x' || c == 'X' || c == 'f' || \
+			c == 'F' || c == 'e' || c == 'E' || c == 'g' || c == 'G' || \
 			c == 'c' || c == 'p' || c == 'P' || c == 'n');
 }
 
 int		isnum_id(char c)
 {
-	return (c == 'D' || c == 'd' || c == 'i' || c == 'o' || c == 'O' ||
-			c == 'u' || c == 'U' || c == 'x' || c == 'X' || c == 'f' ||
+	return (c == 'D' || c == 'd' || c == 'i' || c == 'o' || c == 'O' || \
+			c == 'u' || c == 'U' || c == 'x' || c == 'X' || c == 'f' || \
 			c == 'e' || c == 'E' || c == 'n');
 }
 
@@ -43,11 +43,6 @@ int		isint_id(char c)
 
 int		isuint_id(char c)
 {
-	return (c == 'o' || c == 'O' || c == 'u' || c == 'U' || c == 'x' ||
+	return (c == 'o' || c == 'O' || c == 'u' || c == 'U' || c == 'x' || \
 			c == 'X');
-}
-
-int		isupper_id(char c)
-{
-	return (c == 'O' || c == 'U' ||	c == 'X');
 }

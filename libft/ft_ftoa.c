@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 11:18:56 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/06/25 15:57:34 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:47:40 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void		fix_neg(char *n)
 	}
 }
 
-char *		make_fstr(long double n, size_t prcsn, size_t *zero)
+char		*make_fstr(long double n, size_t prcsn, size_t *zero)
 {
 	size_t i;
 

@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 20:18:43 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 10:50:13 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:37:24 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void		init_int_format(t_id *buff)
 
 	w = (buff->size) ? buff->size->width : 0;
 	l = ft_strlen(buff->s);
-	// l -= ((int)buff->data.data < 0) ? 1 : 0;
 	if (buff->size)
 	{
 		if (buff->size && buff->size->prcsn > l)
@@ -64,7 +63,8 @@ void		make_int_str(t_id *buff)
 	else if (buff->id == 'D')
 		buff->s = ft_itoa((long)buff->data.data);
 	else
-		buff->s = (buff-> len && !(buff->len & UL_LEN)) ? init_int_len(buff->len, \
-		(intmax_t)buff->data.data) : ft_itoa((int)buff->data.data);
+		buff->s = (buff->len && !(buff->len & UL_LEN)) ? \
+		init_int_len(buff->len, (intmax_t)buff->data.data) : \
+		ft_itoa((int)buff->data.data);
 	init_int_format(buff);
 }

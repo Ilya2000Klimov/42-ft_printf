@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 13:07:35 by havi              #+#    #+#             */
-/*   Updated: 2019/08/05 06:23:40 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:45:34 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,9 @@ int			is_valid_fmt(const char *restrict format, int *i)
 			*i += 1;
 		return (0);
 	}
+}
+
+int			isupper_id(char c)
+{
+	return (c == 'O' || c == 'U' || c == 'X');
 }

@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 20:47:10 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 10:52:48 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:46:21 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ char		*init_pos_neg(char *s)
 
 void		check_pos_neg(t_id *buff)
 {
-	if (isint_id(buff->id) && buff->flags & POS_NEG && !(ft_strchr(buff->s, '+') \
-	|| ft_strchr(buff->s, '-')))
+	if (isint_id(buff->id) && buff->flags & POS_NEG && \
+	!(ft_strchr(buff->s, '+') || ft_strchr(buff->s, '-')))
 		buff->s = init_pos_neg(buff->s);
 }
 

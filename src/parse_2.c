@@ -6,14 +6,14 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 13:09:00 by havi              #+#    #+#             */
-/*   Updated: 2019/08/05 05:56:31 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:43:32 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-t_id		*parse_id(const char *restrict format, va_list args, int *i, \
-			t_id *buff)
+t_id			*parse_id(const char *restrict format, va_list args, int *i, \
+				t_id *buff)
 {
 	if (!buff->dollar && !(format[*i] == '%'))
 	{
@@ -34,7 +34,7 @@ t_id		*parse_id(const char *restrict format, va_list args, int *i, \
 
 char			parse_len(const char *restrict format, int *i)
 {
-	char	len;
+	char		len;
 
 	len = 0;
 	len |= (format[*i] == 'l' && format[*i + 1] != 'l') ? L_LEN : 0;
@@ -50,7 +50,7 @@ char			parse_len(const char *restrict format, int *i)
 
 char			parse_flags(const char *restrict format, int *i)
 {
-	char	flags;
+	char		flags;
 
 	flags = 0;
 	while (isflag(format[*i]))

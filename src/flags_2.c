@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/23 05:09:03 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 06:29:53 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/05 18:38:01 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void		check_space(t_id *buff)
 {
 	if (isint_id(buff->id) && \
 	!(buff->flags & POS_NEG) && buff->flags & SPACE && \
-	!(buff->size && buff->size->width >= (int) ft_strlen(buff->s)) && \
+	!(buff->size && buff->size->width >= (int)ft_strlen(buff->s)) && \
 	buff->s[0] != '-')
 		buff->s = init_space(buff->s);
 	else if (buff->flags & PADDING && buff->flags & SPACE && \
