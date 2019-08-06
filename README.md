@@ -27,7 +27,7 @@
 * 'D, O, U' : `The long int argument is converted to signed decimal, unsigned octal, or unsigned decimal, as if the format had been ld, lo, or lu respectively.  These conversion characters are deprecated, and will eventually disappear.`
 
 ### Resources
-1. `man 3 printf`
+1. `man 3 printf` `man 3 stdarg`
 2. `http://www.cplusplus.com/reference/cstdio/printf/`
 3. `https://www.lix.polytechnique.fr/~liberti/public/computing/prog/c/C/FUNCTIONS/format.html#id`
 4. `https://en.wikipedia.org/wiki/Printf_format_string`
