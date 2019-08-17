@@ -1,5 +1,5 @@
 # 42-ft_Printf
-42 Project Aimed at re-creating the BSD Library function printf
+42 Project Aimed at re-creating the C Standard Library function printf
 
 ### Stats
 **42 FINAL GRADE:** 125/125 ✅  
