@@ -2,7 +2,7 @@
 42 Project Aimed at re-creating the BSD Library function printf
 
 ### Stats
-**42 FINAL GRADE:** 125/125
+**42 FINAL GRADE:** 125/125 ✅  
 **PFT:** 2218/2437 Passed  
 **42Filechecker Basic:** 182/182 Passed  
 **42Filechecker Moulitest**: 265/267 (Although I'm almost certain the 2 failed cases are machine error. It may work on your system).  
