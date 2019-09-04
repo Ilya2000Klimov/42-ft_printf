@@ -10,7 +10,7 @@
 ### Supported Conversions:
 * c, s, S, p, P
 * D, d, i, o, O, u, U, x, X
-* f - `Still needs work 😬`
+* f - `Not perfect 😬`
 * n
 
 ### Supported Flags
