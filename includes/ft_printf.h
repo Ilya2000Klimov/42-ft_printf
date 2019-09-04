@@ -6,7 +6,7 @@
 /*   By: hbhuiyan <hbhuiyan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/19 16:02:24 by hbhuiyan          #+#    #+#             */
-/*   Updated: 2019/08/05 05:55:12 by hbhuiyan         ###   ########.fr       */
+/*   Updated: 2019/08/30 17:47:53 by hbhuiyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include "../libft/libft.h"
+# include "../../libft.h"
 
 # define LEFT_JUST	1
 # define PADDING	2
