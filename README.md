@@ -8,7 +8,7 @@
 **42Filechecker Moulitest**: 265/267 (Although I'm almost certain the 2 failed cases are machine error. It may work on your system).  
 
 ### Supported Conversions:
-* c, s, p, P
+* c, s, S, p, P
 * D, d, i, o, O, u, U, x, X
 * f - `Still needs work 😬`
 * n
@@ -24,6 +24,7 @@
 * '$' : `Specify argument from VA input`
 * '* ' :  `Wildcard for width and precision`
 * 'n' : ` The corresponding argument must be a pointer to a signed int. The number of characters written so far is stored in the pointed location.`
+* 'S' : `Prints string in caps`
 * 'P' : `Prints pointer address in caps`
 * 'D, O, U' : `The long int argument is converted to signed decimal, unsigned octal, or unsigned decimal, as if the format had been ld, lo, or lu respectively.  These conversion characters are deprecated, and will eventually disappear.`
 * `Buffer Management`
